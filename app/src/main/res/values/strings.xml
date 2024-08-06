@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Intent</string>
+    <string name="buttonText">Калькулятор</string>
+    <string name="calculateTextView">Калькулятор</string>
+    <string name="plusButtonText">+</string>
+    <string name="editTextHint">Введите число</string>
+    <string name="minusButtonText">-</string>
+    <string name="multiplicationButtonText">*</string>
+    <string name="divisionButtonText">/</string>
+    <string name="resultTextView">Результат</string>
+    <string name="getDataButtonText">Передать данные</string>
+</resources>

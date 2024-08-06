@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SecondActivity">
+
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/calculateTextView"
+            android:textSize="@dimen/_36sp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/editTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_50dp"
+        app:layout_constraintTop_toBottomOf="@+id/titleLayout"
+        >
+
+        <EditText
+            android:id="@+id/firstOperand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/editTextHint"
+            android:textSize="@dimen/_24sp"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginEnd="@dimen/_15dp"
+            android:minHeight="48dp"
+            tools:ignore="SpUsage" />
+
+        <EditText
+            android:id="@+id/secondOperand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/editTextHint"
+            android:textSize="@dimen/_24sp"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginEnd="@dimen/_15dp"
+            android:minHeight="48dp"
+            tools:ignore="SpUsage" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_50dp">
+
+        <Button
+            android:id="@+id/plusButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/plusButtonText"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/minusButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/minusButtonText"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/multButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/multiplicationButtonText"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/divButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/divisionButtonText"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/resultLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_50dp">
+
+        <TextView
+            android:id="@+id/resultTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/resultTextView"
+
+            android:textSize="@dimen/_24sp"
+            android:minHeight="48dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_50dp">
+
+        <Button
+            android:id="@+id/getDataButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/getDataButtonText"
+            android:textSize="@dimen/_24sp"
+            android:layout_marginStart="@dimen/_100dp"
+            android:layout_marginEnd="@dimen/_100dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
